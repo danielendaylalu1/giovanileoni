@@ -147,12 +147,13 @@ body {
   font-weight: 100;
   font-size: 0.85rem;
 }
-.card .card-content {
+.card .card-content p {
   font-weight: 100;
   color: rgb(214, 213, 213);
   text-align: right;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  max-width: 100px;
 }
 .card .card-link {
   width: 90px;
@@ -242,6 +243,7 @@ body {
 }
 .footer-logos {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -249,4 +251,54 @@ body {
 .footer-logos img {
   max-width: 120px;
   max-height: 44px;
+}
+
+@media only screen and (max-width: 725px) {
+  .title {
+    font-size: 2rem;
+  }
+  .header-top .img-container {
+    width: 100px;
+    /* height: 200px; */
+  }
+  .header-top .logo-img {
+    width: 120px !important;
+  }
+  .container hr {
+    width: 95%;
+  }
+  .card {
+    width: 100%;
+    gap: 0.5rem;
+    /* max-height: 300px; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+  }
+
+  .card .card-content {
+    width: auto !important;
+  }
+  .card .alarm-img {
+    /* width: 80%; */
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .card .big-img {
+    max-width: 100% !important;
+  }
+  .cyber-container .card .alarm-img {
+    max-width: 100% !important;
+  }
+  .compliment {
+    padding: 2rem 0;
+  }
+  .compliment-container {
+    padding: 2em 0;
+  }
+  .compliment-content {
+    max-width: 99%;
+  }
+  .footer {
+    background-image: url("./assets/images/footer-sm-bg.jpg");
+  }
 }
