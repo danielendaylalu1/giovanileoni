@@ -113,6 +113,9 @@ body {
   max-width: 240px;
   margin-right: 2rem;
 }
+.card .big-img {
+  max-width: 400px !important;
+}
 .cyber-container .card .alarm-img {
   max-width: 370px !important;
 }
