@@ -383,7 +383,7 @@ tbody > tr > td,
 }
 .credits-container {
   align-items: flex-end;
-  margin-right: 1rem;
+  margin-right: 5rem;
 }
 .credits-container p {
   max-width: 60%;
@@ -446,6 +446,15 @@ tbody > tr > td,
     background-size: 600px;
     /* padding-top: 240px; */
     min-height: 400px;
+  }
+  .credits-container {
+    /* align-items: flex-end; */
+    margin-right: 0;
+  }
+  .credits-container p {
+    /* align-items: flex-end; */
+    margin-right: 0;
+    max-width: 80%;
   }
 }
 
